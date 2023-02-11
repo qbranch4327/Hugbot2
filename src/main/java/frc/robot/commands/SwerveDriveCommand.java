@@ -43,7 +43,7 @@ public class SwerveDriveCommand extends CommandBase {
     
     boolean calibrate = controller.getLeftBumper();
 
-    drivetrain.drive(getxSpeed(xSpeed) * 0.15, getySpeed(ySpeed) * 0.15, getrot(rot) * 0.1, true, calibrate);
+    drivetrain.drive(getxSpeed(xSpeed) * 0.15, getySpeed(ySpeed) * 0.15, getrot(rot), true, calibrate);
   }
 
   private double getySpeed(double ySpeed) {

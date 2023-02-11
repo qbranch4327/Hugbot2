@@ -30,6 +30,7 @@ public class SwerveModuleMK3 {
   private static double kEncoderTicksPerRotation = 4096;
 
   private TalonFX driveMotor;
+  
   private TalonFX angleMotor;
   private CANCoder canCoder;
   private Rotation2d offset;
@@ -56,6 +57,8 @@ public class SwerveModuleMK3 {
                                                   // stopped
 
     TalonFXConfiguration driveTalonFXConfiguration = new TalonFXConfiguration();
+    
+
 
     driveTalonFXConfiguration.slot0.kP = kDriveP;
     driveTalonFXConfiguration.slot0.kI = kDriveI;
